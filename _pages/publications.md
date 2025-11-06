@@ -10,7 +10,9 @@ redirect_from:
 
 <span>&#42;</span> indicates equal contribution
 
-[<b>Understanding representation dynamics of diffusion models via low-dimensional modeling</b>](https://arxiv.org/abs/2502.05743), Xiao Li<span>&#42;</span>, <b>Zekai Zhang<span>&#42;</span></b>, Xiang Li, Siyi Chen, Zhihui Zhu, Peng Wang, Qing Qu. Preprint.
+[<b>A Closer Look at Model Collapse: From a Generalization-to-Memorization Perspective</b>](https://https://arxiv.org/abs/2509.16499), Lianghe Shi<span>&#42;</span>, Meng Wu<span>&#42;</span>, Huijie Zhang, <b>Zekai Zhang</b>, Molei Tao, Qing Qu. <b>NeurIPS 2025 spotlight.<b>
+
+[<b>Understanding representation dynamics of diffusion models via low-dimensional modeling</b>](https://arxiv.org/abs/2502.05743), Xiao Li<span>&#42;</span>, <b>Zekai Zhang<span>&#42;</span></b>, Xiang Li, Siyi Chen, Zhihui Zhu, Peng Wang, Qing Qu. <b>NeurIPS 2025.<b>
 
 [<b>Diffusion Models Learn Low-Dimensional Distributions via Subspace Clustering</b>](https://arxiv.org/abs/2409.02426), Peng Wang<span>&#42;</span>, Huijie Zhang<span>&#42;</span>, <b>Zekai Zhang</b>, Siyi Chen, Yi Ma, Qing Qu. Preprint.
 
