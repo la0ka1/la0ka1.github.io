@@ -16,7 +16,7 @@ url                      : https://la0ka1.github.io # the base hostname & protoc
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "la0ka1/la0ka1.github.io"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
+# Site Author - The following controls what appears as part of the author content on the sidebar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
@@ -48,7 +48,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : # Replace this with you Bluesky username
+  bluesky          : # Replace this with your Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "zekai-zhang-091581330" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -73,7 +73,7 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category - The following is the list of publication categories and their headings
 publication_category:
   # books:
   #   title: 'Books'
@@ -84,7 +84,7 @@ publication_category:
 
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  # filename of teaser fallback teaser image placed in /images/, e.g., "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true

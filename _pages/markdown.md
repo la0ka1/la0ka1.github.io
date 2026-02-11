@@ -25,13 +25,13 @@ redirect_from:
 ## Tips and hints
 
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
+* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version GitHub built with Jekyll.
   * Green check: successful build
   * Orange circle: building
   * Red X: error
   * No icon: not built
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
-  * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
+* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/) and the GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences.
+  * Some emoji supported on GitHub can be added via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
   * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
 
 ## Resources
@@ -53,7 +53,7 @@ $$
 
 The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
 
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772).
+**Note** that since Academic Pages uses Markdown, this can cause some interference with MathJax and LaTeX escaping/newline behavior, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772).
 
 ## Markdown guide
 
@@ -88,8 +88,7 @@ Single line blockquote:
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
-| cell4   | ce
-ll5   | cell6   |
+| cell4   | cell5   | cell6   |
 |-----------------------------|
 | cell1   | cell2   | cell3   |
 | cell4   | cell5   | cell6   |
@@ -142,7 +141,7 @@ Do It Live
 
 ## Buttons
 
-Make any link standout more when applying the `.btn` class.
+Make any link stand out more when applying the `.btn` class.
 
 ## Notices
 
@@ -153,14 +152,14 @@ Basic notices or call-outs are supported using the following syntax:
 {: .notice}
 ```
 
-which wil render as:
+which will render as:
 
 **Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
 {: .notice}
 
 ### Footnotes
 
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
+Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown supports numeric footnotes, as well as text labels, as long as the values are unique.[^note]
 
 ```markdown
 This is the regular text.[^1] This is more regular text.[^note]
@@ -182,7 +181,7 @@ This is the regular text.[^1] This is more regular text.[^note]
 
 ### Anchor Tag (aka. Link)
 
-This is an example of a [link](http://github.com "Github").
+This is an example of a [link](https://github.com "GitHub").
 
 ### Abbreviation Tag
 
@@ -290,4 +289,3 @@ This allows you to denote <var>variables</var>.
 **Footnotes**
 
 The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
