@@ -15,4 +15,4 @@ However, it is not trivial that networks, among all possible solutions that fit 
 
 In our [ICLR 2026 paper](https://openreview.net/forum?id=57THeGgNAN), we show that this ability is not just because networks are powerful and can approximate any function. It is more tightly connected to **their ability to extract and leverage structure** from training data, and to learn balanced, informative representations that organize data and adapt to complex distributions.
 
-Read more in the [official blog]({{ '/blogs/2026-2-10-diffusion-gen-from-rep/' | relative_url }}) and the [slides](https://drive.google.com/file/d/12A0cRa1vq_kCqEHYl_2rMLuMIZv64RmV/view?usp=sharing).
+Read more in the [official blog](https://la0ka1.github.io/diffusion-gen-from-rep/) and the [slides](https://drive.google.com/file/d/12A0cRa1vq_kCqEHYl_2rMLuMIZv64RmV/view?usp=sharing).
