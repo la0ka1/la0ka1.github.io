@@ -142,7 +142,7 @@ redirect_from:
       Diffusion models generalize by extracting underlying structures within the data, learning balanced and informative representations.
     </p>
     <p class="publication-links">
-      <a href="{{ '/blogs/2026-2-10-diffusion-gen-from-rep/' | relative_url }}">Blog</a>
+      <a href="https://la0ka1.github.io/diffusion-gen-from-rep/">Blog</a>
       <a href="https://github.com/la0ka1/diffusion-gen-from-rep">Code</a>
       <a href="https://drive.google.com/file/d/12A0cRa1vq_kCqEHYl_2rMLuMIZv64RmV/view?usp=sharing">Slides</a>
       <a href="https://arxiv.org/abs/2512.20963">arXiv</a>
