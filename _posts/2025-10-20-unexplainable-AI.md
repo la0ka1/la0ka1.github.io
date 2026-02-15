@@ -1,14 +1,17 @@
 ---
 title: "The (non-)explainability of deep learning"
 layout: archive
-permalink: /blogs/2025-10-20-unexplainable/
-tags: [blogs]
+permalink: /notes/2025-10-20-unexplainable/
+tags: [notes]
+published: false
+redirect_from:
+  - /blogs/2025-10-20-unexplainable/
 ---
 
 One reason deep learning performs so well in large-data regimes, often surpassing both humans and earlier fully explainable ML methods, is its <span style="color:darkred;">non</span>-explainability.
 
 <figure style="text-align:center;">
-  <img src="/images/blogs/2025-10-20-1.png" alt="Black-box vs. transparent models" style="display:block; width:65%; max-width:860px; margin:0 auto;" />
+  <img src="/images/notes/2025-10-20-1.png" alt="Black-box vs. transparent models" style="display:block; width:65%; max-width:860px; margin:0 auto;" />
   <figcaption style="font-size:0.88em; color:#555;">
     Deep learning is like replacing the windshield with a smart screen full of powerful algorithms, where you have to trust the black box. Traditional methods (e.g., linear algebra) are like seeing through a glass windshield: much more explainable, but they also take more care.
   </figcaption>

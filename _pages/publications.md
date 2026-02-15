@@ -104,7 +104,7 @@ redirect_from:
     background: #fff6e5;
   }
 
-  .publication-links a[href*="/blogs/"] {
+  .publication-links a[href*="/notes/"] {
     color: #1d4e89;
     border-color: #bfd5f3;
     background: #ecf4ff;
@@ -142,7 +142,7 @@ redirect_from:
       Diffusion models generalize by extracting underlying structures within the data, learning balanced and informative representations.
     </p>
     <p class="publication-links">
-      <a href="https://la0ka1.github.io/diffusion-gen-from-rep/">Blog</a>
+      <a href="https://la0ka1.github.io/diffusion-gen-from-rep/">Note</a>
       <a href="https://github.com/la0ka1/diffusion-gen-from-rep">Code</a>
       <a href="https://drive.google.com/file/d/12A0cRa1vq_kCqEHYl_2rMLuMIZv64RmV/view?usp=sharing">Slides</a>
       <a href="https://arxiv.org/abs/2512.20963">arXiv</a>
@@ -162,7 +162,7 @@ redirect_from:
       When diffusion models are iteratively trained with synthetic data, the generated distribution collapses toward a stable but low-diversity, low-quality mode.
     </p>
     <p class="publication-links">
-      <a href="https://shilianghe007.github.io/model-collapse/index.html">Blog</a>
+      <a href="https://shilianghe007.github.io/model-collapse/index.html">Note</a>
       <a href="https://github.com/shilianghe007/Model_Collapse">Code</a>
       <a href="https://arxiv.org/abs/2509.16499">arXiv</a>
       <a href="https://www.alphaxiv.org/abs/2509.16499">AlphaXiv</a>

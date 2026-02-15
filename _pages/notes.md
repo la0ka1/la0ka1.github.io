@@ -1,51 +1,52 @@
 ---
-permalink: /blogs/
-title: "Zekai's Blogs"
+permalink: /notes/
+title: "Zekai's Notes 学习笔记"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /blogs/
   - /blogs.html
+  - /notes.html
 ---
 
-{% assign blog_posts = site.posts | where_exp:"post","post.tags contains 'blogs'" %}
+{% assign note_posts = site.posts | where_exp:"post","post.tags contains 'notes'" %}
 
 <style>
-  .blog-list {
+  .note-list {
     list-style: none;
     padding-left: 0;
     margin-top: 1.5rem;
   }
 
-  .blog-item {
+  .note-item {
     margin-bottom: 1.75rem;
     border-left: 2px solid #e0e0e0;
     padding-left: 0.75rem;
   }
 
-  .blog-header {
+  .note-header {
     display: flex;
     align-items: baseline;
     gap: 0.75rem;
     flex-wrap: wrap;
   }
 
-  .blog-date {
+  .note-date {
     font-size: 1rem;
     color: #888;
     white-space: nowrap;
   }
 
-  .blog-title {
+  .note-title {
     font-size: 1.25rem;
     font-weight: 400;
     text-decoration: none;
   }
 
-  .blog-title:hover {
+  .note-title:hover {
     text-decoration: underline;
   }
 
-  .blog-excerpt {
+  .note-excerpt {
     margin-top: 0.3rem;
     font-size: 0.95rem;
     color: #555;
@@ -53,19 +54,19 @@ redirect_from:
 
 </style>
 
-<ul class="blog-list">
-{% for post in blog_posts %}
-  <li class="blog-item">
-    <div class="blog-header">
-      <span class="blog-date">
+<ul class="note-list">
+{% for post in note_posts %}
+  <li class="note-item">
+    <div class="note-header">
+      <span class="note-date">
         {{ post.date | date: "%Y-%m-%d" }}
       </span>
-      <a class="blog-title" href="{{ post.url | relative_url }}">
+      <a class="note-title" href="{{ post.url | relative_url }}">
         {{ post.title }}
       </a>
     </div>
     {% if post.excerpt %}
-      <div class="blog-excerpt">
+      <div class="note-excerpt">
         {{ post.excerpt | strip_html | truncate: 200 }}
       </div>
     {% endif %}
@@ -113,4 +114,3 @@ redirect_from:
     {% include archive-single.html %}
   {% endfor %}
 {% endif %} -->
-
