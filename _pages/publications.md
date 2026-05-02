@@ -12,19 +12,20 @@ redirect_from:
 
 <style>
   .publication-list {
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
     display: grid;
-    gap: 0.45rem;
+    gap: 0.2rem;
   }
 
   .publication-item {
     margin: 0;
-    padding: 0.62rem 0.76rem;
-    border: 1px solid #d3d8e0;
-    border-left: 5px solid #6b7280;
-    border-radius: 12px;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #ececec;
+    background: transparent;
+  }
+
+  .publication-item:last-child {
+    border-bottom: none;
   }
 
   .publication-item p {
@@ -32,15 +33,26 @@ redirect_from:
   }
 
   .publication-title {
-    font-size: 0.96rem;
-    line-height: 1.36;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .publication-title a {
+    color: #1f2937;
+    text-decoration: none;
+  }
+
+  .publication-title a:hover {
+    color: #1d4e89;
+    text-decoration: underline;
   }
 
   .publication-meta {
-    margin-top: 0.52rem;
-    font-size: 0.82rem;
-    color: #444;
-    line-height: 1.42;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.45;
   }
 
   .publication-authors {
@@ -49,84 +61,56 @@ redirect_from:
   }
 
   .publication-summary {
-    margin-top: 0.44rem;
+    margin-top: 0.2rem;
     font-size: 0.85rem;
-    line-height: 1.46;
-    color: #333;
+    line-height: 1.5;
+    color: #6b7280;
     font-style: italic;
   }
 
   .publication-links {
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-    line-height: 1.68;
+    margin-top: 0.3rem;
+    font-size: 0.82rem;
+    line-height: 1.6;
   }
 
   .publication-links a {
     display: inline-block;
-    margin: 0 0.22rem 0.06rem 0;
-    padding: 0.06rem 0.42rem;
-    border-radius: 999px;
-    border: 1px solid #d4dae3;
-    background: #f3f6fb;
+    margin-right: 0.55rem;
     color: #2f4f7f;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
-    transition: background-color 0.15s ease, transform 0.15s ease;
+    border-bottom: 1px dotted #aebcd1;
   }
 
   .publication-links a:hover {
-    transform: translateY(-1px);
-    filter: brightness(0.98);
+    color: #1d4e89;
+    border-bottom-style: solid;
   }
 
   .publication-venue {
-    display: inline-block;
-    margin-right: 0.25rem;
-    padding: 0.03rem 0.34rem;
-    border-radius: 999px;
-    border: 1px solid #dcdcdc;
-    background: #ffffff;
-    color: #4a4a4a;
+    display: inline;
+    margin-right: 0.35rem;
+    color: #1d4e89;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 0.88rem;
     font-weight: 700;
+    letter-spacing: 0.01em;
   }
 
-  .publication-links a[href*="arxiv.org"] {
-    color: #8f1d1d;
-    border-color: #efb4b4;
-    background: #fff0f0;
+  .publication-venue::after {
+    content: "·";
+    margin-left: 0.4rem;
+    color: #b5b5b5;
+    font-weight: 400;
   }
 
-  .publication-links a[href*="alphaxiv.org"] {
-    color: #8a5a00;
-    border-color: #f0d4a4;
-    background: #fff6e5;
-  }
-
-  .publication-links a[href*="/notes/"] {
-    color: #1d4e89;
-    border-color: #bfd5f3;
-    background: #ecf4ff;
-  }
-
-  .publication-links a[href*="github.com"] {
-    color: #166534;
-    border-color: #b8e0c5;
-    background: #eaf8ef;
-  }
-
-  .publication-links a[href*="drive.google.com"] {
-    color: #7c3f00;
-    border-color: #efc79d;
-    background: #fff1e2;
-  }
-
-  .publication-links a[href*="openaccess.thecvf.com"] {
-    color: #1e4b9a;
-    border-color: #c3d6ff;
-    background: #edf3ff;
-  }
+  .publication-links a[href*="arxiv.org"]      { color: #8f1d1d; border-bottom-color: #e8b8b8; }
+  .publication-links a[href*="alphaxiv.org"]   { color: #8a5a00; border-bottom-color: #ecd09a; }
+  .publication-links a[href*="/notes/"]        { color: #1d4e89; border-bottom-color: #bfd5f3; }
+  .publication-links a[href*="github.com"]     { color: #166534; border-bottom-color: #b8e0c5; }
+  .publication-links a[href*="drive.google.com"] { color: #7c3f00; border-bottom-color: #efc79d; }
+  .publication-links a[href*="openaccess.thecvf.com"] { color: #1e4b9a; border-bottom-color: #c3d6ff; }
 </style>
 
 <div class="publication-list">
@@ -139,12 +123,12 @@ redirect_from:
       <span class="publication-authors"><strong>Zekai Zhang*</strong>, Xiao Li*, Xiang Li, Lianghe Shi, Meng Wu, Molei Tao, Qing Qu</span>
     </p>
     <p class="publication-summary">
-      Diffusion models generalize by extracting underlying structures within the data, learning balanced and informative representations.
+      Learning good representations is central to novel and meaningful generative modelling
     </p>
     <p class="publication-links">
-      <a href="https://la0ka1.github.io/diffusion-gen-from-rep/">Note</a>
+      <a href="https://la0ka1.github.io/diffusion-gen-from-rep/">Blog</a>
       <a href="https://github.com/la0ka1/diffusion-gen-from-rep">Code</a>
-      <a href="https://drive.google.com/file/d/12A0cRa1vq_kCqEHYl_2rMLuMIZv64RmV/view?usp=sharing">Slides</a>
+      <!-- <a href="https://drive.google.com/file/d/12A0cRa1vq_kCqEHYl_2rMLuMIZv64RmV/view?usp=sharing">Slides</a> -->
       <a href="https://arxiv.org/abs/2512.20963">arXiv</a>
       <a href="https://www.alphaxiv.org/abs/2512.20963">AlphaXiv</a>
     </p>
@@ -159,10 +143,10 @@ redirect_from:
       <span class="publication-authors">Lianghe Shi*, Meng Wu*, Huijie Zhang, <strong>Zekai Zhang</strong>, Molei Tao, Qing Qu</span>
     </p>
     <p class="publication-summary">
-      When diffusion models are iteratively trained with synthetic data, the generated distribution collapses toward a stable but low-diversity, low-quality mode.
+      Diffusion models collapse to a low-diversity/quality mode when trained on their own outputs.
     </p>
     <p class="publication-links">
-      <a href="https://shilianghe007.github.io/model-collapse/index.html">Note</a>
+      <a href="https://shilianghe007.github.io/model-collapse/index.html">Blog</a>
       <a href="https://github.com/shilianghe007/Model_Collapse">Code</a>
       <a href="https://arxiv.org/abs/2509.16499">arXiv</a>
       <a href="https://www.alphaxiv.org/abs/2509.16499">AlphaXiv</a>
@@ -171,14 +155,14 @@ redirect_from:
 
   <div class="publication-item">
     <p class="publication-title">
-      <a href="https://openreview.net/forum?id=HyESKJgPv6"><strong>Understanding Representation Dynamics of Diffusion Models via Low-Dimensional Modeling</strong></a>
+      <a href="https://openreview.net/forum?id=BE6QmLdJqY"><strong>Understanding Representation Dynamics of Diffusion Models via Low-Dimensional Modeling</strong></a>
     </p>
     <p class="publication-meta">
       <span class="publication-venue">NeurIPS 2025</span>
       <span class="publication-authors">Xiao Li*, <strong>Zekai Zhang*</strong>, Xiang Li, Siyi Chen, Zhihui Zhu, Peng Wang, Qing Qu</span>
     </p>
     <p class="publication-summary">
-      Analyzes how time conditioning shapes diffusion representations and how these dynamics can diagnose overfitting.
+      How time conditioning shapes diffusion representations and how it can diagnose overfitting.
     </p>
     <p class="publication-links">
       <a href="https://arxiv.org/abs/2502.05743">arXiv</a>
@@ -199,7 +183,7 @@ redirect_from:
       <a href="https://www.alphaxiv.org/abs/2311.05061">AlphaXiv</a>
     </p>
   </div>
-
+<!-- 
   <div class="publication-item">
     <p class="publication-title">
       <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Liu_LeaF_Learning_Frames_for_4D_Point_Cloud_Sequence_Understanding_ICCV_2023_paper.html"><strong>LeaF: Learning Frames for 4D Point Cloud Sequence Understanding</strong></a>
@@ -211,5 +195,5 @@ redirect_from:
     <p class="publication-links">
       <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Liu_LeaF_Learning_Frames_for_4D_Point_Cloud_Sequence_Understanding_ICCV_2023_paper.html">OpenAccess</a>
     </p>
-  </div>
+  </div> -->
 </div>

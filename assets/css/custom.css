@@ -1,0 +1,239 @@
+/* ---------------------------------------------------------------
+   Site-wide style polish.
+   Matches the typography of diffusion-gen-from-rep/docs and adds
+   styles for the expandable Publications cards on the homepage.
+   --------------------------------------------------------------- */
+
+/* ---- Page body / content ---- */
+body,
+.initial-content,
+.page,
+.page__content {
+  background: #ffffff;
+}
+
+.page__content {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.page__content p,
+.page__content li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* ---- Section titles (About Me, Research, News...) ---- */
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6,
+.page__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: #111827;
+  letter-spacing: 0.005em;
+}
+
+/* ---- Sidebar / author profile (name, bio, location) ---- */
+.author__name,
+.author__bio,
+.author__pronouns,
+.author__urls,
+.author__urls-wrapper,
+.sidebar {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.author__name {
+  font-weight: 500;
+  color: #111827;
+  letter-spacing: 0.01em;
+}
+
+.author__bio {
+  color: #475569;
+  font-style: italic;
+}
+
+.author__urls li,
+.author__urls a {
+  font-size: 0.85rem;
+  color: #334155;
+}
+
+.author__urls a:hover {
+  color: #0b7fd1;
+}
+
+/* ---- Top navigation (site title, Publications, Blogs) ---- */
+.greedy-nav,
+.masthead__menu-item,
+.masthead__menu-item a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.masthead__menu-item a {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #1f2937;
+}
+
+.masthead__menu-item--lg a {
+  font-weight: 500;
+  font-style: italic;
+  color: #0f172a;
+}
+
+.masthead__menu-item a:hover {
+  color: #0b7fd1;
+}
+
+/* ---- News sub-items ---- */
+.news-subitem {
+  font-size: 0.94em;
+}
+
+/* ---- Publication expand/collapse cards (homepage) ---- */
+.pub-list {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+details.pub-item {
+  border: 1px solid #d3d8e0;
+  border-left: 4px solid #6b7280;
+  border-radius: 10px;
+  padding: 0.55rem 0.78rem;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+details.pub-item[open] {
+  border-left-color: #385a7c;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+}
+
+details.pub-item > summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #1a2b4a;
+  line-height: 1.4;
+}
+
+details.pub-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.pub-item > summary::before {
+  content: "▸";
+  display: inline-block;
+  width: 0.85em;
+  margin-right: 0.15rem;
+  color: #6b7280;
+  transition: transform 0.18s ease;
+}
+
+details.pub-item[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.pub-venue {
+  display: inline-block;
+  margin-right: 0.3rem;
+  padding: 0.02rem 0.36rem;
+  border-radius: 999px;
+  border: 1px solid #dcdcdc;
+  background: #f8f8f8;
+  color: #4a4a4a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: 0.05em;
+}
+
+.pub-body {
+  margin-top: 0.5rem;
+  padding-top: 0.42rem;
+  border-top: 1px solid #e5e9f0;
+  font-size: 0.82rem;
+  color: #444;
+  line-height: 1.46;
+}
+
+.pub-body p {
+  margin: 0.28rem 0 0;
+}
+
+.pub-summary {
+  font-style: italic;
+  color: #333;
+}
+
+.pub-links {
+  margin-top: 0.45rem;
+}
+
+.pub-links a {
+  display: inline-block;
+  margin: 0 0.18rem 0.05rem 0;
+  padding: 0.04rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid #d4dae3;
+  background: #f3f6fb;
+  color: #2f4f7f;
+  font-weight: 600;
+  font-size: 0.78rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  transition: filter 0.12s ease;
+}
+
+.pub-links a:hover {
+  filter: brightness(0.96);
+}
+
+.pub-links a[href*="arxiv.org"] {
+  color: #8f1d1d;
+  border-color: #efb4b4;
+  background: #fff0f0;
+}
+
+.pub-links a[href*="github.com"] {
+  color: #166534;
+  border-color: #b8e0c5;
+  background: #eaf8ef;
+}
+
+.pub-links a[href*="drive.google.com"] {
+  color: #7c3f00;
+  border-color: #efc79d;
+  background: #fff1e2;
+}
+
+.pub-links a[href*="openreview.net"] {
+  color: #1d4e89;
+  border-color: #bfd5f3;
+  background: #ecf4ff;
+}
+
+.pub-links a[href*="openaccess.thecvf.com"] {
+  color: #1e4b9a;
+  border-color: #c3d6ff;
+  background: #edf3ff;
+}
+
+.pub-links a[href$=".github.io/"],
+.pub-links a[href*=".github.io/index"] {
+  color: #385a7c;
+  border-color: #c3d2e3;
+  background: #eff4fb;
+}
