@@ -10,8 +10,8 @@
 locale                   : "en-US"
 title                    : "LA0KA1's site"
 title_separator          : "-"
-name                     : &ZekaiZhang
-description              : &PersonalSite
+name                     : "Zekai Zhang"
+description              : "Zekai Zhang (张泽楷), PhD student at University of Michigan EECS — diffusion models, representation learning, and the theory of generative models."
 url                      : https://la0ka1.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/notes"
 repository               : "la0ka1/la0ka1.github.io"
@@ -171,6 +171,7 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - compose.yaml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -302,6 +303,7 @@ timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 # Plugins
 plugins:
   # - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
@@ -310,6 +312,7 @@ plugins:
 # Mimic GitHub Pages with --safe
 whitelist:
   # - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap

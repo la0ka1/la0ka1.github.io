@@ -1,0 +1,16 @@
+# Preview the site locally:
+#   docker compose up            # build (first time) + serve at http://localhost:4000
+#   docker compose up --build    # rebuild the image after changing Gemfile
+#   docker compose down          # stop
+#
+# Edits to pages/CSS are picked up automatically (bind mount + polling);
+# changes to _config.yml need a restart (`docker compose restart`).
+services:
+  site:
+    build: .
+    image: jekyll-site
+    ports:
+      - "4000:4000"    # site
+      - "35729:35729"  # livereload
+    volumes:
+      - .:/usr/src/app

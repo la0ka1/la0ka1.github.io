@@ -2,9 +2,11 @@
 
 <!-- start custom head snippets -->
 
+<meta name="description" content="{{ page.description | default: site.description | escape_once }}">
+
 <!-- Favicon (single source of truth, matches the diffusion-gen-from-rep style) -->
-<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
-<link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
+<link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}" sizes="any">
+<link rel="shortcut icon" href="{{ '/images/favicon.ico' | relative_url }}">
 <link rel="mask-icon" href="{{ base_path }}/images/safari-pinned-tab.svg" color="#000000">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">

@@ -37,18 +37,13 @@ If you are running on Linux it may be necessary to install some additional depen
 
 ## Using Docker
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by building the container:
+Working from a different OS, or just want to avoid installing dependencies? The provided `Dockerfile` and `compose.yaml` run the site for you if you have [Docker](https://www.docker.com/) installed:
 
 ```bash
-docker build -t jekyll-site .
+docker compose up
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
-```
+The first run builds the image (a few minutes); afterwards the site is served at [http://localhost:4000](http://localhost:4000) and rebuilds automatically when you edit files (with live reload in the browser). Changes to `_config.yml` require a restart (`docker compose restart`). Stop with `docker compose down`, and rebuild the image with `docker compose up --build` after changing the `Gemfile`.
 
 # Maintenance
 

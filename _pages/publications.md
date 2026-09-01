@@ -3,7 +3,6 @@ permalink: /publications/
 title: "Selected Publications"
 author_profile: true
 redirect_from: 
-  - /publications/
   - /publications.html
 ---
 
@@ -12,14 +11,14 @@ redirect_from:
 
 <style>
   .publication-list {
-    margin-top: 0.6rem;
+    margin-top: 0.5rem;
     display: grid;
-    gap: 0.2rem;
+    gap: 0;
   }
 
   .publication-item {
     margin: 0;
-    padding: 0.65rem 0;
+    padding: 0.6rem 0;
     border-bottom: 1px solid #ececec;
     background: transparent;
   }
@@ -32,24 +31,25 @@ redirect_from:
     margin: 0;
   }
 
-  .publication-title {
+  .publication-item .publication-title {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.4;
+    text-wrap: pretty;
   }
 
-  .publication-title a {
+  .publication-item .publication-title a {
     color: #1f2937;
     text-decoration: none;
   }
 
-  .publication-title a:hover {
+  .publication-item .publication-title a:hover {
     color: #1d4e89;
     text-decoration: underline;
   }
 
-  .publication-meta {
-    margin-top: 0.25rem;
+  .publication-item .publication-meta {
+    margin-top: 0.18rem;
     font-size: 0.85rem;
     color: #555;
     line-height: 1.45;
@@ -60,21 +60,21 @@ redirect_from:
     color: #4b5563;
   }
 
-  .publication-summary {
-    margin-top: 0.2rem;
+  .publication-item .publication-summary {
+    margin-top: 0.15rem;
     font-size: 0.85rem;
     line-height: 1.5;
     color: #6b7280;
     font-style: italic;
   }
 
-  .publication-links {
-    margin-top: 0.3rem;
+  .publication-item .publication-links {
+    margin-top: 0.22rem;
     font-size: 0.82rem;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
-  .publication-links a {
+  .publication-item .publication-links a {
     display: inline-block;
     margin-right: 0.55rem;
     color: #2f4f7f;
@@ -83,7 +83,7 @@ redirect_from:
     border-bottom: 1px dotted #aebcd1;
   }
 
-  .publication-links a:hover {
+  .publication-item .publication-links a:hover {
     color: #1d4e89;
     border-bottom-style: solid;
   }
@@ -105,12 +105,12 @@ redirect_from:
     font-weight: 400;
   }
 
-  .publication-links a[href*="arxiv.org"]      { color: #8f1d1d; border-bottom-color: #e8b8b8; }
-  .publication-links a[href*="alphaxiv.org"]   { color: #8a5a00; border-bottom-color: #ecd09a; }
-  .publication-links a[href*="/notes/"]        { color: #1d4e89; border-bottom-color: #bfd5f3; }
-  .publication-links a[href*="github.com"]     { color: #166534; border-bottom-color: #b8e0c5; }
-  .publication-links a[href*="drive.google.com"] { color: #7c3f00; border-bottom-color: #efc79d; }
-  .publication-links a[href*="openaccess.thecvf.com"] { color: #1e4b9a; border-bottom-color: #c3d6ff; }
+  .publication-item .publication-links a[href*="arxiv.org"]      { color: #8f1d1d; border-bottom-color: #e8b8b8; }
+  .publication-item .publication-links a[href*="alphaxiv.org"]   { color: #8a5a00; border-bottom-color: #ecd09a; }
+  .publication-item .publication-links a[href*="/notes/"]        { color: #1d4e89; border-bottom-color: #bfd5f3; }
+  .publication-item .publication-links a[href*="github.com"]     { color: #166534; border-bottom-color: #b8e0c5; }
+  .publication-item .publication-links a[href*="drive.google.com"] { color: #7c3f00; border-bottom-color: #efc79d; }
+  .publication-item .publication-links a[href*="openaccess.thecvf.com"] { color: #1e4b9a; border-bottom-color: #c3d6ff; }
 </style>
 
 <div class="publication-list">
@@ -123,7 +123,7 @@ redirect_from:
       <span class="publication-authors"><strong>Zekai Zhang*</strong>, Xiao Li*, Xiang Li, Lianghe Shi, Meng Wu, Molei Tao, Qing Qu</span>
     </p>
     <p class="publication-summary">
-      Learning good representations is central to novel and meaningful generative modelling
+      Learning good representations is central to novel and meaningful generative modelling.
     </p>
     <p class="publication-links">
       <a href="https://la0ka1.github.io/diffusion-gen-from-rep/">Blog</a>

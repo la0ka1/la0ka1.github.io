@@ -1,7 +1,7 @@
 /* ---------------------------------------------------------------
    Site-wide style polish.
-   Matches the typography of diffusion-gen-from-rep/docs and adds
-   styles for the expandable Publications cards on the homepage.
+   Typography matches diffusion-gen-from-rep/docs. The last two
+   sections hold the homepage-only rules (.home wrapper, news list).
    --------------------------------------------------------------- */
 
 /* ---- Page body / content ---- */
@@ -24,7 +24,7 @@ body,
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* ---- Section titles (About Me, Research, News...) ---- */
+/* ---- Headings ---- */
 .page__content h1,
 .page__content h2,
 .page__content h3,
@@ -92,148 +92,160 @@ body,
   color: #0b7fd1;
 }
 
-/* ---- News sub-items ---- */
-.news-subitem {
-  font-size: 0.94em;
+/* ---- Content links: navy accent with dotted underline ---- */
+.page__content a {
+  color: #1d4e89;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
 }
 
-/* ---- Publication expand/collapse cards (homepage) ---- */
-.pub-list {
-  margin-top: 0.5rem;
-  display: grid;
-  gap: 0.4rem;
+.page__content a:hover {
+  color: #163a66;
+  text-decoration-style: solid;
 }
 
-details.pub-item {
-  border: 1px solid #d3d8e0;
-  border-left: 4px solid #6b7280;
-  border-radius: 10px;
-  padding: 0.55rem 0.78rem;
-  background: #ffffff;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+/* ---- Homepage (_pages/about.md is wrapped in <div class="home">) ---- */
+.home p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-details.pub-item[open] {
-  border-left-color: #385a7c;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+.home h2 {
+  margin: 2.2rem 0 0.7rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: 1.4rem;
 }
 
-details.pub-item > summary {
-  cursor: pointer;
+.home h2:first-of-type {
+  margin-top: 0.6rem;
+}
+
+/* Quiet aside at the end of the Research section */
+.home .motto {
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #6b7280;
+}
+
+/* "[CV]" link next to the About Me heading */
+.home h2 .cv-link {
+  margin-left: 0.4em;
+  font-size: 0.85em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d4e89;
+  text-decoration: none;
+  border-bottom: 1px dotted #aebcd1;
+}
+
+.home h2 .cv-link:hover {
+  border-bottom-style: solid;
+}
+
+/* ---- News list (homepage) ----
+   <ul class="news">
+     <li><span class="news-date">Mon YYYY</span> <span>text</span></li>
+     <li><span class="news-date">Mon YYYY</span>
+         <details><summary>… <span class="paper-link">paper</span> …</summary>
+                  <div class="news-sub">…</div></details></li>
+   </ul> */
+.news {
   list-style: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: #1a2b4a;
-  line-height: 1.4;
+  padding-left: 0;
+  margin: 0.3rem 0 0.6rem;
 }
 
-details.pub-item > summary::-webkit-details-marker {
+.news > li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  padding: 0.3rem 0;
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+
+.news > li > :last-child {
+  flex: 1 1 auto;
+}
+
+.news-date {
+  flex: 0 0 5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.01em;
+}
+
+.news summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.news summary::-webkit-details-marker {
   display: none;
 }
 
-details.pub-item > summary::before {
-  content: "▸";
+.paper-link {
+  color: #1d4e89;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+.paper-link:hover,
+.news details[open] .paper-link {
+  text-decoration-style: solid;
+}
+
+.news-sub {
+  margin-top: 0.2rem;
+  padding-left: 0.7rem;
+  border-left: 2px solid #d4dae3;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* ---- "Earlier news" fold at the end of the news list ---- */
+.news-older {
+  margin: -0.2rem 0 0.6rem;
+}
+
+.news-older > summary {
+  list-style: none;
   display: inline-block;
-  width: 0.85em;
-  margin-right: 0.15rem;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
   color: #6b7280;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+
+.news-older > summary::-webkit-details-marker {
+  display: none;
+}
+
+.news-older > summary::after {
+  content: "\25B8";
+  display: inline-block;
+  margin-left: 0.4em;
+  text-decoration: none;
   transition: transform 0.18s ease;
 }
 
-details.pub-item[open] > summary::before {
+.news-older > summary:hover {
+  color: #374151;
+  text-decoration-style: solid;
+}
+
+.news-older[open] > summary::after {
   transform: rotate(90deg);
 }
 
-.pub-venue {
-  display: inline-block;
-  margin-right: 0.3rem;
-  padding: 0.02rem 0.36rem;
-  border-radius: 999px;
-  border: 1px solid #dcdcdc;
-  background: #f8f8f8;
-  color: #4a4a4a;
-  font-size: 0.78rem;
-  font-weight: 700;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  vertical-align: 0.05em;
-}
-
-.pub-body {
-  margin-top: 0.5rem;
-  padding-top: 0.42rem;
-  border-top: 1px solid #e5e9f0;
-  font-size: 0.82rem;
-  color: #444;
-  line-height: 1.46;
-}
-
-.pub-body p {
-  margin: 0.28rem 0 0;
-}
-
-.pub-summary {
-  font-style: italic;
-  color: #333;
-}
-
-.pub-links {
-  margin-top: 0.45rem;
-}
-
-.pub-links a {
-  display: inline-block;
-  margin: 0 0.18rem 0.05rem 0;
-  padding: 0.04rem 0.45rem;
-  border-radius: 999px;
-  border: 1px solid #d4dae3;
-  background: #f3f6fb;
-  color: #2f4f7f;
-  font-weight: 600;
-  font-size: 0.78rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  transition: filter 0.12s ease;
-}
-
-.pub-links a:hover {
-  filter: brightness(0.96);
-}
-
-.pub-links a[href*="arxiv.org"] {
-  color: #8f1d1d;
-  border-color: #efb4b4;
-  background: #fff0f0;
-}
-
-.pub-links a[href*="github.com"] {
-  color: #166534;
-  border-color: #b8e0c5;
-  background: #eaf8ef;
-}
-
-.pub-links a[href*="drive.google.com"] {
-  color: #7c3f00;
-  border-color: #efc79d;
-  background: #fff1e2;
-}
-
-.pub-links a[href*="openreview.net"] {
-  color: #1d4e89;
-  border-color: #bfd5f3;
-  background: #ecf4ff;
-}
-
-.pub-links a[href*="openaccess.thecvf.com"] {
-  color: #1e4b9a;
-  border-color: #c3d6ff;
-  background: #edf3ff;
-}
-
-.pub-links a[href$=".github.io/"],
-.pub-links a[href*=".github.io/index"] {
-  color: #385a7c;
-  border-color: #c3d2e3;
-  background: #eff4fb;
+.news-older > .news {
+  margin-top: 0;
 }
