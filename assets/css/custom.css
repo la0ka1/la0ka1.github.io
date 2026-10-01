@@ -1,27 +1,45 @@
 /* ---------------------------------------------------------------
-   Site-wide style polish.
-   Typography matches diffusion-gen-from-rep/docs. The last two
-   sections hold the homepage-only rules (.home wrapper, news list).
+   Site-wide style polish, loaded after the theme's main.css.
+   Typography matches diffusion-gen-from-rep/docs.
+
+   Sections, in order:
+     Tokens
+     Content typography, headings, links
+     Sidebar, top navigation
+     Homepage      (_pages/about.md, wrapped in <div class="home">)
+     News list     (homepage)
+     Publications  (_pages/publications.md)
+     Blogs         (_pages/blogs.md)
+     Small screens (root font size below 768px), Phones (<= 600px)
    --------------------------------------------------------------- */
+
+/* ---- Tokens ---- */
+:root {
+  --serif: Georgia, "Times New Roman", Times, serif;
+
+  --ink: #111827;           /* headings */
+  --text-soft: #374151;     /* secondary body text */
+  --text-dim: #4b5563;      /* authors, blog dates */
+  --muted: #6b7280;         /* dates, summaries, asides */
+
+  --accent: #1d4e89;        /* links, venues */
+  --accent-dark: #163a66;
+  --accent-rule: #aebcd1;   /* dotted rule under accent links */
+  --nav-hover: #0b7fd1;     /* sidebar and top-nav hover */
+}
 
 /* ---- Page body / content ---- */
 body,
-.initial-content,
 .page,
 .page__content {
   background: #ffffff;
 }
 
 .page__content {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--serif);
   font-size: 0.88rem;
   line-height: 1.5;
   color: #262626;
-}
-
-.page__content p,
-.page__content li {
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* ---- Headings ---- */
@@ -32,25 +50,29 @@ body,
 .page__content h5,
 .page__content h6,
 .page__title {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--serif);
   font-weight: 500;
-  color: #111827;
+  color: var(--ink);
   letter-spacing: 0.005em;
 }
 
-/* ---- Sidebar / author profile (name, bio, location) ---- */
-.author__name,
-.author__bio,
-.author__pronouns,
-.author__urls,
-.author__urls-wrapper,
-.sidebar {
-  font-family: Georgia, "Times New Roman", Times, serif;
+/* ---- Content links: navy accent with dotted underline ---- */
+.page__content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
 }
 
+.page__content a:hover {
+  color: var(--accent-dark);
+  text-decoration-style: solid;
+}
+
+/* ---- Sidebar / author profile (name, bio, links) ---- */
 .author__name {
   font-weight: 500;
-  color: #111827;
+  color: var(--ink);
   letter-spacing: 0.01em;
 }
 
@@ -66,14 +88,12 @@ body,
 }
 
 .author__urls a:hover {
-  color: #0b7fd1;
+  color: var(--nav-hover);
 }
 
 /* ---- Top navigation (site title, Publications, Blogs) ---- */
-.greedy-nav,
-.masthead__menu-item,
-.masthead__menu-item a {
-  font-family: Georgia, "Times New Roman", Times, serif;
+.greedy-nav {
+  font-family: var(--serif);
 }
 
 .masthead__menu-item a {
@@ -89,20 +109,7 @@ body,
 }
 
 .masthead__menu-item a:hover {
-  color: #0b7fd1;
-}
-
-/* ---- Content links: navy accent with dotted underline ---- */
-.page__content a {
-  color: #1d4e89;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 2px;
-}
-
-.page__content a:hover {
-  color: #163a66;
-  text-decoration-style: solid;
+  color: var(--nav-hover);
 }
 
 /* ---- Homepage (_pages/about.md is wrapped in <div class="home">) ---- */
@@ -127,7 +134,7 @@ body,
   margin: 0.8rem 0 0;
   font-size: 0.95rem;
   font-style: italic;
-  color: #6b7280;
+  color: var(--muted);
 }
 
 /* "[CV]" link next to the About Me heading */
@@ -136,9 +143,9 @@ body,
   font-size: 0.85em;
   font-weight: 400;
   letter-spacing: 0.02em;
-  color: #1d4e89;
+  color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px dotted #aebcd1;
+  border-bottom: 1px dotted var(--accent-rule);
 }
 
 .home h2 .cv-link:hover {
@@ -175,7 +182,7 @@ body,
   flex: 0 0 5rem;
   font-size: 0.88rem;
   font-weight: 600;
-  color: #6b7280;
+  color: var(--muted);
   letter-spacing: 0.01em;
 }
 
@@ -189,7 +196,7 @@ body,
 }
 
 .paper-link {
-  color: #1d4e89;
+  color: var(--accent);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 2px;
@@ -205,7 +212,7 @@ body,
   padding-left: 0.7rem;
   border-left: 2px solid #d4dae3;
   font-size: 0.95rem;
-  color: #374151;
+  color: var(--text-soft);
 }
 
 /* ---- "Earlier news" fold at the end of the news list ---- */
@@ -219,7 +226,7 @@ body,
   cursor: pointer;
   padding: 0.3rem 0;
   font-size: 0.95rem;
-  color: #6b7280;
+  color: var(--muted);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 3px;
@@ -238,7 +245,7 @@ body,
 }
 
 .news-older > summary:hover {
-  color: #374151;
+  color: var(--text-soft);
   text-decoration-style: solid;
 }
 
@@ -248,4 +255,236 @@ body,
 
 .news-older > .news {
   margin-top: 0;
+}
+
+/* ---- Publications (_pages/publications.md) ----
+   <div class="publication-list">
+     <div class="publication-item">
+       <p class="publication-title"><a href="…">Title</a></p>
+       <p class="publication-meta">
+         <span class="publication-venue">Venue YYYY</span>
+         <span class="publication-authors">A, <strong>Zekai Zhang</strong>, B</span>
+       </p>
+       <p class="publication-summary">One-line takeaway (optional).</p>
+       <p class="publication-links"><a href="…">arXiv</a> …</p>
+     </div>
+   </div> */
+.publication-list {
+  margin-top: 0.5rem;
+}
+
+.publication-item {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.publication-item p {
+  margin: 0;
+}
+
+.publication-item .publication-title {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+
+.publication-item .publication-title a {
+  color: #1f2937;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-item .publication-title a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.publication-item .publication-meta {
+  margin-top: 0.18rem;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.45;
+}
+
+.publication-venue {
+  margin-right: 0.35rem;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.publication-venue::after {
+  content: "·";
+  margin-left: 0.4rem;
+  color: #b5b5b5;
+  font-weight: 400;
+}
+
+.publication-authors {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+}
+
+.publication-item .publication-summary {
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.publication-item .publication-links {
+  margin-top: 0.22rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.publication-item .publication-links a {
+  display: inline-block;
+  margin-right: 0.55rem;
+  color: #2f4f7f;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent-rule);
+}
+
+.publication-item .publication-links a:hover {
+  color: var(--accent);
+  border-bottom-style: solid;
+}
+
+/* Per-host accent for the action links */
+.publication-item .publication-links a[href*="arxiv.org"]             { color: #8f1d1d; border-bottom-color: #e8b8b8; }
+.publication-item .publication-links a[href*="alphaxiv.org"]          { color: #8a5a00; border-bottom-color: #ecd09a; }
+.publication-item .publication-links a[href*="/notes/"]               { color: #1d4e89; border-bottom-color: #bfd5f3; }
+.publication-item .publication-links a[href*="github.com"]            { color: #166534; border-bottom-color: #b8e0c5; }
+.publication-item .publication-links a[href*="drive.google.com"]      { color: #7c3f00; border-bottom-color: #efc79d; }
+.publication-item .publication-links a[href*="openaccess.thecvf.com"] { color: #1e4b9a; border-bottom-color: #c3d6ff; }
+
+/* ---- Blogs (_pages/blogs.md) ----
+   <ul class="blog-list">
+     <li class="blog-item">
+       <div class="blog-header">
+         <span class="blog-date">YYYY-MM</span>
+         <a class="blog-title" href="…">Title.</a>
+       </div>
+       <div class="blog-excerpt">One-sentence summary.</div>
+     </li>
+   </ul> */
+.blog-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+.blog-item {
+  margin-bottom: 1.75rem;
+  border-left: 2px solid #e0e0e0;
+  padding-left: 0.75rem;
+}
+
+.blog-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.blog-date {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.blog-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.blog-excerpt {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ---- Small screens ----
+   Below 768px the theme drops the root font size from 18px to 16px, which
+   leaves the whole site a notch small on phones. Sizes are in rem, so this
+   one value scales all text there. */
+@media (max-width: 767px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+/* ---- Phones ---- */
+@media (max-width: 600px) {
+  /* Top nav: tighter gaps, so Publications and Blogs both stay on the bar.
+     The title must not wrap, or the menu script cannot tell when the
+     links stop fitting (below ~345px it folds Blogs into the menu button). */
+  .masthead__menu-item--lg {
+    padding-right: 0.75em;
+  }
+
+  .greedy-nav .visible-links li:first-child {
+    text-wrap: nowrap;
+  }
+
+  .greedy-nav a {
+    margin: 0 0.8rem;
+  }
+
+  /* Author strip above the page: the bio is the smallest text on screen */
+  .sidebar .author__bio {
+    font-size: 0.85rem;
+  }
+
+  /* Plain body text (publications note, 404) */
+  .page__content {
+    font-size: 0.94rem;
+  }
+
+  /* Blogs: the date becomes a small label above the title */
+  .blog-header {
+    flex-direction: column;
+    gap: 0.1rem;
+    text-wrap: balance;
+  }
+
+  .blog-date {
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+  }
+
+  .blog-title {
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+
+  .blog-excerpt {
+    margin-top: 0.35rem;
+    font-size: 1rem;
+  }
+
+  /* Publications: larger secondary text and link targets */
+  .publication-item .publication-title {
+    font-size: 1rem;
+  }
+
+  .publication-venue,
+  .publication-authors,
+  .publication-item .publication-summary,
+  .publication-item .publication-links {
+    font-size: 0.92rem;
+  }
+
+  .publication-item .publication-links a {
+    margin-right: 0.8rem;
+  }
 }

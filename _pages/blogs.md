@@ -8,52 +8,6 @@ redirect_from:
   - /blogs.html
 ---
 
-
-<style>
-  .blog-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1.5rem;
-  }
-
-  .blog-item {
-    margin-bottom: 1.75rem;
-    border-left: 2px solid #e0e0e0;
-    padding-left: 0.75rem;
-  }
-
-  .blog-header {
-    display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-  }
-
-  .blog-date {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #4b5563;
-    white-space: nowrap;
-  }
-
-  .blog-title {
-    font-size: 1.05rem;
-    font-weight: 500;
-    text-decoration: none;
-  }
-
-  .blog-title:hover {
-    text-decoration: underline;
-  }
-
-  .blog-excerpt {
-    margin-top: 0.3rem;
-    font-size: 0.95rem;
-    color: #555;
-  }
-</style>
-
 <ul class="blog-list">
   <li class="blog-item">
     <div class="blog-header">
@@ -63,7 +17,7 @@ redirect_from:
       </a>
     </div>
     <div class="blog-excerpt">
-      Scaling the latent embeddings of continuous diffusion language models improves generation, and distilling them into a more connected and robust space enhances it further.
+      Scaled embeddings make good latents for continuous diffusion language models, and distillation further trades their discriminative power for diffusibility.
     </div>
   </li>
   <li class="blog-item">

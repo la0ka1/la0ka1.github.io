@@ -6,117 +6,12 @@ redirect_from:
   - /publications.html
 ---
 
-
-<span>*</span> indicates equal contribution.
-
-<style>
-  .publication-list {
-    margin-top: 0.5rem;
-    display: grid;
-    gap: 0;
-  }
-
-  .publication-item {
-    margin: 0;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid #ececec;
-    background: transparent;
-  }
-
-  .publication-item:last-child {
-    border-bottom: none;
-  }
-
-  .publication-item p {
-    margin: 0;
-  }
-
-  .publication-item .publication-title {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    text-wrap: pretty;
-  }
-
-  .publication-item .publication-title a {
-    color: #1f2937;
-    text-decoration: none;
-  }
-
-  .publication-item .publication-title a:hover {
-    color: #1d4e89;
-    text-decoration: underline;
-  }
-
-  .publication-item .publication-meta {
-    margin-top: 0.18rem;
-    font-size: 0.85rem;
-    color: #555;
-    line-height: 1.45;
-  }
-
-  .publication-authors {
-    font-size: 0.88rem;
-    color: #4b5563;
-  }
-
-  .publication-item .publication-summary {
-    margin-top: 0.15rem;
-    font-size: 0.85rem;
-    line-height: 1.5;
-    color: #6b7280;
-    font-style: italic;
-  }
-
-  .publication-item .publication-links {
-    margin-top: 0.22rem;
-    font-size: 0.82rem;
-    line-height: 1.5;
-  }
-
-  .publication-item .publication-links a {
-    display: inline-block;
-    margin-right: 0.55rem;
-    color: #2f4f7f;
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 1px dotted #aebcd1;
-  }
-
-  .publication-item .publication-links a:hover {
-    color: #1d4e89;
-    border-bottom-style: solid;
-  }
-
-  .publication-venue {
-    display: inline;
-    margin-right: 0.35rem;
-    color: #1d4e89;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.88rem;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-  }
-
-  .publication-venue::after {
-    content: "·";
-    margin-left: 0.4rem;
-    color: #b5b5b5;
-    font-weight: 400;
-  }
-
-  .publication-item .publication-links a[href*="arxiv.org"]      { color: #8f1d1d; border-bottom-color: #e8b8b8; }
-  .publication-item .publication-links a[href*="alphaxiv.org"]   { color: #8a5a00; border-bottom-color: #ecd09a; }
-  .publication-item .publication-links a[href*="/notes/"]        { color: #1d4e89; border-bottom-color: #bfd5f3; }
-  .publication-item .publication-links a[href*="github.com"]     { color: #166534; border-bottom-color: #b8e0c5; }
-  .publication-item .publication-links a[href*="drive.google.com"] { color: #7c3f00; border-bottom-color: #efc79d; }
-  .publication-item .publication-links a[href*="openaccess.thecvf.com"] { color: #1e4b9a; border-bottom-color: #c3d6ff; }
-</style>
+<p>* indicates equal contribution.</p>
 
 <div class="publication-list">
   <div class="publication-item">
     <p class="publication-title">
-      <a href="https://openreview.net/forum?id=57THeGgNAN"><strong>Generalization of Diffusion Models Arises with a Balanced Representation Space</strong></a>
+      <a href="https://openreview.net/forum?id=57THeGgNAN">Generalization of Diffusion Models Arises with a Balanced Representation Space</a>
     </p>
     <p class="publication-meta">
       <span class="publication-venue">ICLR 2026</span>
@@ -136,7 +31,7 @@ redirect_from:
 
   <div class="publication-item">
     <p class="publication-title">
-      <a href="https://openreview.net/forum?id=6xCcjYa97j"><strong>A Closer Look at Model Collapse: From a Generalization-to-Memorization Perspective</strong></a>
+      <a href="https://openreview.net/forum?id=6xCcjYa97j">A Closer Look at Model Collapse: From a Generalization-to-Memorization Perspective</a>
     </p>
     <p class="publication-meta">
       <span class="publication-venue">NeurIPS 2025 (Spotlight)</span>
@@ -155,7 +50,7 @@ redirect_from:
 
   <div class="publication-item">
     <p class="publication-title">
-      <a href="https://openreview.net/forum?id=BE6QmLdJqY"><strong>Understanding Representation Dynamics of Diffusion Models via Low-Dimensional Modeling</strong></a>
+      <a href="https://openreview.net/forum?id=BE6QmLdJqY">Understanding Representation Dynamics of Diffusion Models via Low-Dimensional Modeling</a>
     </p>
     <p class="publication-meta">
       <span class="publication-venue">NeurIPS 2025</span>
@@ -172,7 +67,7 @@ redirect_from:
 
   <div class="publication-item">
     <p class="publication-title">
-      <a href="https://proceedings.mlr.press/v238/min-kwon24a"><strong>Efficient Compression of Overparameterized Deep Models through Low-Dimensional Learning Dynamics</strong></a>
+      <a href="https://proceedings.mlr.press/v238/min-kwon24a">Efficient Compression of Overparameterized Deep Models through Low-Dimensional Learning Dynamics</a>
     </p>
     <p class="publication-meta">
       <span class="publication-venue">AISTATS 2024</span>
@@ -186,7 +81,7 @@ redirect_from:
 <!-- 
   <div class="publication-item">
     <p class="publication-title">
-      <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Liu_LeaF_Learning_Frames_for_4D_Point_Cloud_Sequence_Understanding_ICCV_2023_paper.html"><strong>LeaF: Learning Frames for 4D Point Cloud Sequence Understanding</strong></a>
+      <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Liu_LeaF_Learning_Frames_for_4D_Point_Cloud_Sequence_Understanding_ICCV_2023_paper.html">LeaF: Learning Frames for 4D Point Cloud Sequence Understanding</a>
     </p>
     <p class="publication-meta">
       <span class="publication-venue">ICCV 2023</span>
