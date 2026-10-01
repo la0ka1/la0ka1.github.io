@@ -63,7 +63,7 @@ redirect_from:
       </a>
     </div>
     <div class="blog-excerpt">
-      Scaling the latent embeddings of continuous diffusion language models improves generation, and distilling them into a more connected and robust one further enhance them.
+      Continuous diffusion language models improve as their text embeddings scale up, and improve further when the embeddings are distilled into a more connected, robust latent space.
     </div>
   </li>
   <li class="blog-item">
