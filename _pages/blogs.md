@@ -57,6 +57,17 @@ redirect_from:
 <ul class="blog-list">
   <li class="blog-item">
     <div class="blog-header">
+      <span class="blog-date">2026-10</span>
+      <a class="blog-title" href="https://la0ka1.github.io/diffusing-scaled-text-embeddings/">
+        Scaling and Distilling Text Embeddings for Better Diffusibility.
+      </a>
+    </div>
+    <div class="blog-excerpt">
+      Scaling the latent embeddings of continuous diffusion language models improves generation, and distilling them into a more connected and robust one further enhance them.
+    </div>
+  </li>
+  <li class="blog-item">
+    <div class="blog-header">
       <span class="blog-date">2026-01</span>
       <a class="blog-title" href="https://la0ka1.github.io/diffusion-gen-from-rep/">
         Generalization and Representation Learning in Diffusion Models.
