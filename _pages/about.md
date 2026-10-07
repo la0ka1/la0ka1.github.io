@@ -17,13 +17,20 @@ I am a third-year PhD student in [EECS at the University of Michigan](https://ec
 
 ## Research
 
-I work on effective theory for generative models (especially diffusion models), with tools like representation learning and simplified models. My goal is to find principles for understanding and collaborating with them. Recently, I am also exploring their applications to scientific discovery and mathematics.
+I work on effective theory for generative models (especially diffusion models), via representation learning and simplified models. My goal is to help people understand, demystify, and collaborate with generative models better.
 
 <!-- Representation learning would be the brain science for AI. -->
 
 ## News
 
 <ul class="news" markdown="0">
+  <li>
+    <span class="news-date">Oct 2026</span>
+    <details>
+      <summary>One <span class="paper-link">paper</span> on diffusion language models is on arXiv!</summary>
+      <div class="news-sub"><a href="https://arxiv.org/abs/2610.01016">Scaling and Distilling Text Embeddings for Better Diffusibility</a></div>
+    </details>
+  </li>
   <li>
     <span class="news-date">Aug 2026</span>
     <span>Gratefully wrapped up my internship at TikTok Seattle (May–Aug)!</span>

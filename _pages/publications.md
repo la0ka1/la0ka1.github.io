@@ -11,6 +11,25 @@ redirect_from:
 <div class="publication-list">
   <div class="publication-item">
     <p class="publication-title">
+      <a href="https://arxiv.org/abs/2610.01016">Scaling and Distilling Text Embeddings for Better Diffusibility</a>
+    </p>
+    <p class="publication-meta">
+      <span class="publication-venue">arXiv</span>
+      <span class="publication-authors"><strong>Zekai Zhang</strong>, Yunjie Tian, Yanjin He, Xiaoyan Zhang, Dongdi Zhao, Qing Qu, Di Fu</span>
+    </p>
+    <p class="publication-summary">
+      We distill scaled text embeddings into a good latent for continuous diffusion language models.
+    </p>
+    <p class="publication-links">
+      <a href="https://la0ka1.github.io/diffusing-scaled-text-embeddings/">Blog</a>
+      <a href="https://github.com/la0ka1/diffusing-scaled-text-embeddings">Code</a>
+      <a href="https://arxiv.org/abs/2610.01016">arXiv</a>
+      <a href="https://www.alphaxiv.org/abs/2610.01016">AlphaXiv</a>
+    </p>
+  </div>
+
+  <div class="publication-item">
+    <p class="publication-title">
       <a href="https://openreview.net/forum?id=57THeGgNAN">Generalization of Diffusion Models Arises with a Balanced Representation Space</a>
     </p>
     <p class="publication-meta">

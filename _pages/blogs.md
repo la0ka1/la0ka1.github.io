@@ -17,7 +17,7 @@ redirect_from:
       </a>
     </div>
     <div class="blog-excerpt">
-      Scaled embeddings make good latents for continuous diffusion language models, and distillation further trades their discriminative power for diffusibility.
+      Scaled embeddings are high-potential latents for continuous diffusion language models, and we further distill them into a more connected and diffusible space.
     </div>
   </li>
   <li class="blog-item">
