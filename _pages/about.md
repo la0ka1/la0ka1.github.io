@@ -17,7 +17,7 @@ I am a third-year PhD student in [EECS at the University of Michigan](https://ec
 
 ## Research
 
-I work on effective theory for generative models (especially diffusion models), via representation learning and simplified models. My goal is to help people understand, demystify, and collaborate with generative models better.
+I work on effective theory for generative models (especially diffusion models), via representation learning and simplified models. My goal is to understand, disenchant, and collaborate with generative models better.
 
 <!-- Representation learning would be the brain science for AI. -->
 
