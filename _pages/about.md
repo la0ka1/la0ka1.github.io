@@ -37,7 +37,7 @@ I work on effective theory for generative models (especially diffusion models), 
   </li>
   <li>
     <span class="news-date">Aug 2026</span>
-    <span>Gratefully wrapped up my internship at TikTok Seattle (May–Aug)!</span>
+    <span>Gratefully wrapped up my internship at TikTok Seattle (May–Aug).</span>
   </li>
   <li>
     <span class="news-date">May 2026</span>
@@ -75,10 +75,10 @@ I work on effective theory for generative models (especially diffusion models), 
       <span class="news-date">May 2024</span>
       <span>Awarded the <a href="https://micde.umich.edu/member/zekai-zhang/">MICDE Fellowship</a>.</span>
     </li>
-    <li>
+    <!-- <li>
       <span class="news-date">Sep 2023</span>
       <span>Awarded the National Scholarship of China.</span>
-    </li>
+    </li> -->
   </ul>
 </details>
 
