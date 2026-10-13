@@ -1,6 +1,6 @@
 ---
 permalink: /blogs/
-title: "Blogs"
+title: "Zekai's Blogs"
 author_profile: true
 redirect_from:
   - /notes/

@@ -9,7 +9,11 @@ redirect_from:
 
 <div class="home" markdown="1">
 
+<!-- CV hidden for now. To bring it back, restore files/cv_zekai.pdf, point _pages/cv.md at it, and use:
 ## About Me <a class="cv-link" href="/files/cv_zekai.pdf">[CV]</a>
+-->
+
+## About Me
 
 I am a third-year PhD student in [EECS at the University of Michigan](https://ece.engin.umich.edu/), advised by Prof. [Qing Qu](https://qingqu.engin.umich.edu/). Before that, I received my bachelor's degree from the [Department of Automation, Tsinghua University](https://www.au.tsinghua.edu.cn/en/).
 
@@ -17,7 +21,7 @@ I am a third-year PhD student in [EECS at the University of Michigan](https://ec
 
 ## Research
 
-I work on effective theory for generative models (especially diffusion models), via representation learning and simplified models. My goal is to understand, disenchant, and collaborate with generative models better.
+I work on effective theory for generative models (especially diffusion models), via representation learning and simplified models. My goal is to help people understand, disenchant, and collaborate with generative models better.
 
 <!-- Representation learning would be the brain science for AI. -->
 
