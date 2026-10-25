@@ -6,6 +6,12 @@ redirect_from:
   - /publications.html
 ---
 
+{% comment %}
+Low-key version for the F-1 visa renewal (Oct 2026): the venue badges show the
+year only. The original venue of each paper is noted in a Liquid comment next
+to its badge; put it back to switch back.
+{% endcomment %}
+
 <p>* indicates equal contribution.</p>
 
 <div class="publication-list">
@@ -33,7 +39,7 @@ redirect_from:
       <a href="https://openreview.net/forum?id=57THeGgNAN">Generalization of Diffusion Models Arises with a Balanced Representation Space</a>
     </p>
     <p class="publication-meta">
-      <span class="publication-venue">ICLR 2026</span>
+      <span class="publication-venue">2026</span> {% comment %} was "ICLR 2026" {% endcomment %}
       <span class="publication-authors"><strong>Zekai Zhang*</strong>, Xiao Li*, Xiang Li, Lianghe Shi, Meng Wu, Molei Tao, Qing Qu</span>
     </p>
     <p class="publication-summary">
@@ -53,7 +59,7 @@ redirect_from:
       <a href="https://openreview.net/forum?id=6xCcjYa97j">A Closer Look at Model Collapse: From a Generalization-to-Memorization Perspective</a>
     </p>
     <p class="publication-meta">
-      <span class="publication-venue">NeurIPS 2025 (Spotlight)</span>
+      <span class="publication-venue">2025</span> {% comment %} was "NeurIPS 2025 (Spotlight)" {% endcomment %}
       <span class="publication-authors">Lianghe Shi*, Meng Wu*, Huijie Zhang, <strong>Zekai Zhang</strong>, Molei Tao, Qing Qu</span>
     </p>
     <p class="publication-summary">
@@ -72,7 +78,7 @@ redirect_from:
       <a href="https://openreview.net/forum?id=BE6QmLdJqY">Understanding Representation Dynamics of Diffusion Models via Low-Dimensional Modeling</a>
     </p>
     <p class="publication-meta">
-      <span class="publication-venue">NeurIPS 2025</span>
+      <span class="publication-venue">2025</span> {% comment %} was "NeurIPS 2025" {% endcomment %}
       <span class="publication-authors">Xiao Li*, <strong>Zekai Zhang*</strong>, Xiang Li, Siyi Chen, Zhihui Zhu, Peng Wang, Qing Qu</span>
     </p>
     <p class="publication-summary">
@@ -89,7 +95,7 @@ redirect_from:
       <a href="https://proceedings.mlr.press/v238/min-kwon24a">Efficient Compression of Overparameterized Deep Models through Low-Dimensional Learning Dynamics</a>
     </p>
     <p class="publication-meta">
-      <span class="publication-venue">AISTATS 2024</span>
+      <span class="publication-venue">2024</span> {% comment %} was "AISTATS 2024" {% endcomment %}
       <span class="publication-authors">Soo Min Kwon*, <strong>Zekai Zhang*</strong>, Dogyoon Song, Laura Balzano, Qing Qu</span>
     </p>
     <p class="publication-links">
