@@ -69,7 +69,13 @@ body,
   text-decoration-style: solid;
 }
 
-/* ---- Sidebar / author profile (name, bio, links) ---- */
+/* ---- Sidebar / author profile (photo, name, bio, links) ---- */
+/* Photo: the theme caps it at 175px. Only the desktop sidebar is affected;
+   on phones the photo sits in a fixed 36px cell. */
+.author__avatar img {
+  max-width: 200px;
+}
+
 .author__name {
   font-weight: 500;
   color: var(--ink);

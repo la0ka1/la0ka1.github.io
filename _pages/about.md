@@ -19,7 +19,7 @@ I am a third-year PhD student in [EECS at the University of Michigan](https://ec
 
 <!-- I work on effective theory for generative models (especially diffusion models), via representation learning and simplified models. My goal is to help people understand, disenchant, and collaborate with generative models better. -->
 
-I study generative models from a representation learning perspective, e.g. how they learn representations for generation / how to enhance generation with good representations. I am currently working on (diffusion) language models and video-based world models.
+I study generative models from a representation learning perspective, e.g. how they learn representations for generation / how to enhance generation with good representations. I am currently working on *(diffusion) language models* and *video-based world models*.
 
 <!-- Representation learning would be the brain science for AI. -->
 
