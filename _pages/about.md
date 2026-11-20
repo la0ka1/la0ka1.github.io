@@ -7,23 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-{% comment %}
-Low-key version for the F-1 visa renewal (Oct 2026). The original Research
-paragraph and News list are kept in Liquid comment blocks below; Liquid drops
-them at build time, so they are not in the published HTML. To switch back,
-paste the originals back in place of the visa versions, or restore everything
-at once from the last full version (commit 7d464d7):
-  git checkout 7d464d7 -- _pages/about.md _pages/blogs.md _pages/publications.md _data/navigation.yml _config.yml
-The CV is hidden separately (see the note below and _pages/cv.md).
-{% endcomment %}
-
 <div class="home" markdown="1">
 
-<!-- CV hidden for now. To bring it back, restore files/cv_zekai.pdf, point _pages/cv.md at it, and use:
 ## About Me <a class="cv-link" href="/files/cv_zekai.pdf">[CV]</a>
--->
-
-## About Me
 
 I am a third-year PhD student in [EECS at the University of Michigan](https://ece.engin.umich.edu/), advised by Prof. [Qing Qu](https://qingqu.engin.umich.edu/). Before that, I received my bachelor's degree from the [Department of Automation, Tsinghua University](https://www.au.tsinghua.edu.cn/en/).
 
@@ -31,11 +17,9 @@ I am a third-year PhD student in [EECS at the University of Michigan](https://ec
 
 ## Research
 
-I develop simplified mathematical theory to understand how computational models capture underlying patterns in complex datasets, and how these patterns can help explain and improve methods for text and image generation.
+<!-- I work on effective theory for generative models (especially diffusion models), via representation learning and simplified models. My goal is to help people understand, disenchant, and collaborate with generative models better. -->
 
-{% comment %} Original Research paragraph:
-I work on effective theory for generative models (especially diffusion models), via representation learning and simplified models. My goal is to help people understand, disenchant, and collaborate with generative models better.
-{% endcomment %}
+I study generative models from a representation learning perspective, e.g. how they learn representations for generation / how to enhance generation with good representations. I am currently working on (diffusion) language models and video-based world models.
 
 <!-- Representation learning would be the brain science for AI. -->
 
@@ -43,31 +27,9 @@ I work on effective theory for generative models (especially diffusion models), 
 
 <ul class="news" markdown="0">
   <li>
-    <span class="news-date">Aug 2026</span>
-    <span>Gratefully wrapped up my internship at TikTok Seattle (May–Aug).</span>
-  </li>
-  <li>
-    <span class="news-date">Jan 2026</span>
-    <span>Passed my preliminary exam and advanced to PhD candidacy!</span>
-  </li>
-</ul>
-
-<details class="news-older" markdown="0">
-  <summary>Earlier news</summary>
-  <ul class="news">
-    <li>
-      <span class="news-date">May 2024</span>
-      <span>Awarded the <a href="https://micde.umich.edu/member/zekai-zhang/">MICDE Fellowship</a>.</span>
-    </li>
-  </ul>
-</details>
-
-{% comment %} Original News list:
-<ul class="news" markdown="0">
-  <li>
     <span class="news-date">Oct 2026</span>
     <details>
-      <summary>One <span class="paper-link">paper</span> on diffusion language models is on arXiv!</summary>
+      <summary>One <span class="paper-link">paper</span> on diffusion language models is on arXiv.</summary>
       <div class="news-sub"><a href="https://arxiv.org/abs/2610.01016">Scaling and Distilling Text Embeddings for Better Diffusibility</a></div>
     </details>
   </li>
@@ -111,12 +73,11 @@ I work on effective theory for generative models (especially diffusion models), 
       <span class="news-date">May 2024</span>
       <span>Awarded the <a href="https://micde.umich.edu/member/zekai-zhang/">MICDE Fellowship</a>.</span>
     </li>
-    <!-- <li>
+    <li>
       <span class="news-date">Sep 2023</span>
       <span>Awarded the National Scholarship of China.</span>
-    </li> -->
+    </li>
   </ul>
 </details>
-{% endcomment %}
 
 </div>

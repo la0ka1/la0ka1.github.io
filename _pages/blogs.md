@@ -2,9 +2,6 @@
 permalink: /blogs/
 title: "Zekai's Blogs"
 author_profile: true
-# Blogs hidden for the visa renewal (Oct 2026): /blogs/ goes to the homepage and the
-# nav item is commented out in _data/navigation.yml. Restore: delete the redirect_to line.
-redirect_to: /
 redirect_from:
   - /notes/
   - /notes.html
