@@ -17,7 +17,7 @@ redirect_from:
       </a>
     </div>
     <div class="blog-excerpt">
-      Scaled embeddings are high-potential latents for continuous diffusion language models, and we further distill them into a more connected and diffusible space.
+      Representation Autoencoder (RAE) for continuous diffusion language models. The power of scaling holds for diffusion language modeling.
     </div>
   </li>
   <li class="blog-item">

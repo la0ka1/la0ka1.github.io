@@ -24,6 +24,7 @@ redirect_from:
     <p class="publication-links">
       <a href="https://la0ka1.github.io/diffusing-scaled-text-embeddings/">Blog</a>
       <a href="https://github.com/la0ka1/diffusing-scaled-text-embeddings">Code</a>
+      <a href="/files/slides_diffusing_scaled_text_embeddings.pdf">Slides</a>
       <a href="https://arxiv.org/abs/2610.01016">arXiv</a>
       <a href="https://www.alphaxiv.org/abs/2610.01016">AlphaXiv</a>
     </p>
@@ -43,7 +44,7 @@ redirect_from:
     <p class="publication-links">
       <a href="https://la0ka1.github.io/diffusion-gen-from-rep/">Blog</a>
       <a href="https://github.com/la0ka1/diffusion-gen-from-rep">Code</a>
-      <!-- <a href="https://drive.google.com/file/d/12A0cRa1vq_kCqEHYl_2rMLuMIZv64RmV/view?usp=sharing">Slides</a> -->
+      <a href="/files/slides_diffusion_gen_from_rep_deepmath.pdf">Slides</a>
       <a href="https://arxiv.org/abs/2512.20963">arXiv</a>
       <a href="https://www.alphaxiv.org/abs/2512.20963">AlphaXiv</a>
     </p>

@@ -369,7 +369,8 @@ body,
 .publication-item .publication-links a[href*="alphaxiv.org"]          { color: #8a5a00; border-bottom-color: #ecd09a; }
 .publication-item .publication-links a[href*="/notes/"]               { color: #1d4e89; border-bottom-color: #bfd5f3; }
 .publication-item .publication-links a[href*="github.com"]            { color: #166534; border-bottom-color: #b8e0c5; }
-.publication-item .publication-links a[href*="drive.google.com"]      { color: #7c3f00; border-bottom-color: #efc79d; }
+.publication-item .publication-links a[href*="drive.google.com"],
+.publication-item .publication-links a[href*="/files/slides"]         { color: #7c3f00; border-bottom-color: #efc79d; }
 .publication-item .publication-links a[href*="openaccess.thecvf.com"] { color: #1e4b9a; border-bottom-color: #c3d6ff; }
 
 /* ---- Blogs (_pages/blogs.md) ----

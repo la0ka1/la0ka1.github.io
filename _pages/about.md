@@ -48,7 +48,7 @@ I study generative models from a representation learning perspective, e.g. how t
     <span class="news-date">Jan 2026</span>
     <details>
       <summary>One <span class="paper-link">paper</span> accepted at ICLR 2026.</summary>
-      <div class="news-sub"><a href="https://arxiv.org/abs/2512.20963">Generalization of Diffusion Models Arises with a Balanced Representation Space</a>, with an <a href="https://drive.google.com/file/d/12A0cRa1vq_kCqEHYl_2rMLuMIZv64RmV/view?usp=sharing">oral talk</a> at DeepMath.</div>
+      <div class="news-sub"><a href="https://arxiv.org/abs/2512.20963">Generalization of Diffusion Models Arises with a Balanced Representation Space</a>, with an <a href="/files/slides_diffusion_gen_from_rep_deepmath.pdf">oral talk</a> at DeepMath.</div>
     </details>
   </li>
   <li>
